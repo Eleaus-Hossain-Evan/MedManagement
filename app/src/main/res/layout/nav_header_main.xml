@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header"
+    android:layout_width="fill_parent"
+    android:layout_height="160.0dip"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/drawerImage"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@+id/drawerImage"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:contentPadding="8dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:cardBackgroundColor="#2C000000"
+            app:strokeWidth="2dp">
+
+        <TextView
+            android:id="@+id/drawerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Welcome"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:background="#00212121"/>
+
+        <TextView
+            android:id="@+id/drawerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawerName"
+            android:layout_alignLeft="@+id/drawerName"
+            android:layout_alignRight="@+id/drawerName"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="Anonymous"
+            android:textColor="#FFF"
+            android:textSize="15.0dip"
+            android:textStyle="italic"
+            android:backgroundTint="#00212121"/>
+
+    </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</RelativeLayout>
