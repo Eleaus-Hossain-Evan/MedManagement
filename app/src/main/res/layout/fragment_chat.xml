@@ -27,7 +27,7 @@
         android:textColor="#FFF"
         android:layout_marginTop="8dp"
         style="@style/Widget.EditText.Custom"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
         android:id="@+id/btnStartChat"
         android:text="  Start Chat  "/>
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.healthcare.Fragments;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
@@ -17,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.healthcare.Activities.MainActivity;
+import com.healthcare.Activities.MapsActivity;
 import com.healthcare.Fragments.module_doctor_chat.ChatTabs;
 import com.healthcare.Fragments.module_family_record.fam_frag1;
 import com.healthcare.Fragments.module_pill_reminder.PillFragment;
@@ -91,6 +93,8 @@ public class HomeFragment extends Fragment {
                                 .commit();
                         break;
                     case 4:
+                        Intent intent1 = new Intent(getContext(), MapsActivity.class);
+                        startActivity(intent1);
                         break;
                     case 5:
                         ((MainActivity) getContext()).getSupportFragmentManager()

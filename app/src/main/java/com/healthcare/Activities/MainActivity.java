@@ -165,15 +165,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit();
                 break;
+
+            case R.id.nav_ambulance:
+                navigationView.getMenu().getItem(5).setChecked(true);
+                Intent intent1 = new Intent(this, MapsActivity.class);
+                startActivity(intent1);
             case R.id.nav_logout:
                 DBHandler.clearDb(getApplicationContext());
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(this, LoginActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(this, LoginActivity.class);
+                startActivity(intent2);
 
-                /*String push=DBHandler.getPushId(this);
+                String push=DBHandler.getPushId(this);
                 myRef.child(push).child("loggedIn").setValue("false");
-*/
                 finish();
                 break;
 

@@ -32,7 +32,6 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Title"
-            android:textColor="@color/colorAccent"
             android:textStyle="bold"
             android:background="#4DC17900"/>
     </com.google.android.material.card.MaterialCardView>

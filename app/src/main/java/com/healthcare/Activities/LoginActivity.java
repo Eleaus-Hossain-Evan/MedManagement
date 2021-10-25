@@ -169,26 +169,6 @@ public class LoginActivity extends AppCompatActivity {
                 String result = "success";
 
                 try {
-//                    HttpClient httpClient = new DefaultHttpClient();
-//                    HttpPost httpPost = new HttpPost(
-//                            "http://anigupta.esy.es/login.php");
-//                    httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-//
-//                    HttpResponse response = httpClient.execute(httpPost);
-//
-//                    HttpEntity entity = response.getEntity();
-//
-//                    is = entity.getContent();
-//
-//                    BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"), 8);
-//                    StringBuilder sb = new StringBuilder();
-//
-//                    String line = null;
-//                    while ((line = reader.readLine()) != null) {
-//                        sb.append(line + "\n");
-//                    }
-//                    result = sb.toString();
-
                     mAuth.signInWithEmailAndPassword(Email, Password)
                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override

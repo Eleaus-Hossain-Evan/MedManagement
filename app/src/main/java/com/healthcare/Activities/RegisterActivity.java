@@ -235,9 +235,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         // Sign in success, update UI with the signed-in user's information
                                         Log.d(TAG, "createUserWithEmail:success");
                                         Toast.makeText(getApplication(), "Registration Successful", Toast.LENGTH_SHORT).show();
-                                        firebaseUser = mAuth.getCurrentUser();
-                                        assert firebaseUser != null;
-                                        user = new User(Email,FirstName,LastName,firebaseUser.getUid(),Phone,false,"None");
+
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w(TAG, "createUserWithEmail:failure", task.getException());
@@ -258,8 +256,11 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String result) {
                 String s = result.trim();
-                loadingDialog.dismiss();
                 if (s.equalsIgnoreCase("success")) {
+                    firebaseUser = mAuth.getCurrentUser();
+                    user = new User(Email,FirstName,LastName,firebaseUser.getUid(),Phone,false,"None");
+                    myRef.child(firebaseUser.getUid()).setValue(user);
+                    loadingDialog.dismiss();
                     Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
 
 //                    myRef.child("email").setValue(Email);

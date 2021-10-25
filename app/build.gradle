@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -39,6 +40,14 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.2.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-base:16.1.0'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
 
     androidTestImplementation ('androidx.test.espresso:espresso-core:3.4.0', {
         exclude group: 'com.androidx', module: 'annotations'
@@ -56,6 +65,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-storage'
     implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-core'
+    implementation 'com.firebase:geofire-android:2.1.1'
 
     implementation 'androidx.legacy:legacy-support-v4'
     implementation 'com.stephentuso:welcome:1.1.0'

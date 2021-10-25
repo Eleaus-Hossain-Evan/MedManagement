@@ -148,8 +148,7 @@
                 style="@style/Widget.EditText.Custom"
                 android:layout_marginTop="10dp"
                 android:text="REGISTER"
-                android:background="@color/colorAccent"
-                android:textColor="#FFF"
+                android:background="@color/colorPrimaryLight"
                 android:id="@+id/btnRegister" />
         </LinearLayout>
 

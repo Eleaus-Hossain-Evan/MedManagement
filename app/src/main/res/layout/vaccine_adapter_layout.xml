@@ -34,8 +34,7 @@
         android:layout_height="wrap_content"
         android:text="DOB"
         android:textStyle="bold"
-        android:id="@+id/tvDob"
-        android:textColor="@color/colorAccent"/>
+        android:id="@+id/tvDob"/>
     </LinearLayout>
 
     <ImageView

@@ -88,10 +88,9 @@
                 android:text="LOG IN"
                 android:textStyle="bold"
                 android:backgroundTint="@color/colorPrimaryDark"
-                app:rippleColor="@color/colorAccent"
-                app:strokeColor="@color/colorPrimaryLight"
+                app:rippleColor="@color/colorPrimaryLight"
+                app:strokeColor="@color/colorSecondary"
                 app:strokeWidth="2dp"
-                android:textColor="#FFF"
                 app:elevation="1dp" />
 
             <LinearLayout

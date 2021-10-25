@@ -9,6 +9,7 @@
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/activity_main1.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/activity_register.xml" value="0.18" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/activity_vaccine.xml" value="0.1" />
@@ -36,7 +37,9 @@
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/fragment_vaccine_child_details.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/grid_layout.xml" value="0.33" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
+        <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/layout/vaccine_adapter_layout.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/menu/activity_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/menu/menu.xml" value="0.1" />
         <entry key="..\:/Users/evanh/Desktop/project/HealthCareApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1375" />
       </map>
     </option>
